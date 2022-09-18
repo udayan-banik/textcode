@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.10.0/ace.js"
+      integrity="sha512-7s3F2rOCm3IxjF8NjYsmlhE8gNOiaj2i9Uq6MZch73ApkLH2/iuoB7q3Z4NFiS8GTmRhyHKSKulosEgwDZf2Iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>< / textcode / ></title>
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> -->
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon" /> -->
+  </head>
+
+  <body>
+    <h3 class="question">< / textcode / ></h3>
+
+    <div class="dropdown">
+      <select id="myselect" onchange="changeLanguage()">
+        <option value="no-select">--select language--</option>
+        <option value="c_cpp">C++</option>
+        <option value="csharp">C#</option>
+        <option value="java">Java</option>
+        <option value="javascript">Javascript</option>
+        <option value="python">Python</option>
+      </select>
+    </div>
+
+    <div class="editor-container">
+      <!-- <div id="copy-bar">
+        <button class="cpy-btn">Copy</button>
+      </div> -->
+      <div id="editor">//code your mind</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
