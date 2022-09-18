@@ -6,6 +6,8 @@ var selectLanguage = input.value;
 
 var code = ace.edit(editor);
 
+var btn = document.getElementById("cpy-btn");
+
 function changeLanguage() {
   var selectLanguage = input.value;
   code.session.setMode({
@@ -70,8 +72,29 @@ using System;
 }
 
 function copyText() {
-  editor.selectAll();
+  var sel = code.selection.toJSON(); // save selection
+  code.selectAll();
+  code.focus();
+  document.execCommand("copy");
+  code.selection.fromJSON(sel); // restore selection
 }
+
+// copyText.(function (e) {
+//   const currentLabel = btn.innerHTML;
+
+//   // Exit label update when already in progress
+//   if (btn.innerHTML === "Copied!") {
+//     return;
+//   }
+
+//   // Update button label
+//   btn.innerHTML = "Copied!";
+
+//   // Revert button label after 3 seconds
+//   setTimeout(function () {
+//     btn.innerHTML = currentLabel;
+//   }, 3000);
+// });
 
 /* ClipboardJS Implementation (Not working) */
 
