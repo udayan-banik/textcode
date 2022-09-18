@@ -38,15 +38,17 @@ h3.question {
   border-radius: 0%;
 }
 
-/* .cpy-btn {
+.cpy-btn {
   display: flex;
   position: relative;
-  left: 853px;
-  border-color: transparent;
-  background-color: #dcdcdc7f;
-  border-radius: 5px;
+  left: 96%;
+  /* border-color: transparent;
+  background-color: #dcdcdc00; */
+  /* border-radius: 5px; */
+  padding-top: 2px;
 }
 
+/*
 .copy-bar {
   width: 900px;
   height: 540px;
