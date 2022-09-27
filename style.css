@@ -7,11 +7,21 @@ h3.question {
   font-style: oblique;
 }
 
+/* @media only screen and (max-width: 768px) {
+  [class="editor-container"] {
+    width: auto;
+  }
+} */
+
 .editor-container {
-  width: 900px;
-  height: 540px;
-  margin: 20px auto;
-  position: relative;
+  /* width: 900px; */
+  width: auto;
+  /* height: 540px; */
+  height: 60vh;
+  margin: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* position: relative; */
   background-color: #dcdcdc7f;
   border-radius: 5px;
   box-shadow: 5px 10px 8px #c3c0c0;
@@ -41,11 +51,12 @@ h3.question {
 .cpy-btn {
   display: flex;
   position: relative;
-  left: 96%;
-  /* border-color: transparent;
-  background-color: #dcdcdc00; */
+  /* left: 96%; */
+  margin-right: 96%;
+  /* border-color: transparent; */
+  /* background-color: #dcdcdc00; */
   /* border-radius: 5px; */
-  padding-top: 2px;
+  /* padding-top: 2px; */
 }
 
 /*

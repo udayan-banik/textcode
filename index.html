@@ -16,8 +16,26 @@
     ></script>
 
     <title>< / textcode / ></title>
-    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> -->
-    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon" /> -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
   </head>
 
   <body>
@@ -60,5 +78,10 @@
     </div>
 
     <script src="main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
   </body>
 </html>
