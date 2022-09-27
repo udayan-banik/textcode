@@ -99,31 +99,31 @@ function copyText() {
 /* ClipboardJS Implementation (Not working) */
 
 // Select elements
-const target = document.getElementById("lola");
-const button = target.nextElementSibling;
+// const target = document.getElementById("lola");
+// const button = target.nextElementSibling;
 
-// Init clipboard -- for more info, please read the offical documentation: https://clipboardjs.com/
-var clipboard = new ClipboardJS(button, {
-  target: target,
-  text: function () {
-    return target.value;
-  },
-});
+// // Init clipboard -- for more info, please read the offical documentation: https://clipboardjs.com/
+// var clipboard = new ClipboardJS(button, {
+//   target: target,
+//   text: function () {
+//     return target.value;
+//   },
+// });
 
-// Success action handler
-clipboard.on("success", function (e) {
-  const currentLabel = button.innerHTML;
+// // Success action handler
+// clipboard.on("success", function (e) {
+//   const currentLabel = button.innerHTML;
 
-  // Exit label update when already in progress
-  if (button.innerHTML === "Copied!") {
-    return;
-  }
+//   // Exit label update when already in progress
+//   if (button.innerHTML === "Copied!") {
+//     return;
+//   }
 
-  // Update button label
-  button.innerHTML = "Copied!";
+//   // Update button label
+//   button.innerHTML = "Copied!";
 
-  // Revert button label after 3 seconds
-  setTimeout(function () {
-    button.innerHTML = currentLabel;
-  }, 3000);
-});
+//   // Revert button label after 3 seconds
+//   setTimeout(function () {
+//     button.innerHTML = currentLabel;
+//   }, 3000);
+// });
