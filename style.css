@@ -43,7 +43,20 @@ h3.question {
 
 .dropdown {
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0%;
+  padding-bottom: auto;
+}
+
+.theme-dropdown,
+.keybind-dropdown,
+.language-dropdown {
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
   align-items: center;
   border-radius: 0%;
 }

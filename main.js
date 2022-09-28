@@ -2,11 +2,23 @@ let editor = document.querySelector("#editor");
 
 var input = document.getElementById("myselect");
 
+var theme = document.getElementById("theme");
+
+var keybind = document.getElementById("keybind");
+
 var selectLanguage = input.value;
+
+var selectTheme = theme.value;
 
 var code = ace.edit(editor);
 
 var btn = document.getElementById("cpy-btn");
+
+function changeKeybind() {
+  var selectKeybind = keybind.value;
+  console.log(selectKeybind);
+  code.setKeyboardHandler(selectKeybind);
+}
 
 function changeLanguage() {
   var selectLanguage = input.value;
@@ -77,6 +89,12 @@ function copyText() {
   code.focus();
   document.execCommand("copy");
   code.selection.fromJSON(sel); // restore selection
+}
+
+function changeTheme() {
+  var selectTheme = theme.value;
+  console.log(selectTheme);
+  code.setTheme(selectTheme);
 }
 
 // copyText.(function (e) {
